@@ -1,7 +1,7 @@
 package interview.manager
 
-import interview.domain.Job
 import interview.cluster.ExternalClusterService
+import interview.domain.Job
 import java.time.Clock
 
 /**
@@ -26,28 +26,6 @@ class JobManager(
      * @throws IllegalArgumentException if the job already exists
      */
     fun submit(job: Job) : JobManagerStatus {
-        TODO()
-    }
-
-    /**
-     * Get current status of a job
-     *
-     * @param clientJobId The id of the job
-     * @return Current status of that job
-     * @throws IllegalArgumentException if the job id cannot be found
-     */
-    fun getStatus(clientJobId: Int) : JobManagerStatus {
-        TODO()
-    }
-
-    /**
-     * Get history of the job (timestamp + status)
-     *
-     * @param clientJobId The id of the job
-     * @return TBC
-     * @throws IllegalArgumentException if the job id cannot be found
-     */
-    fun getHistory(clientJobId: Int) {
         TODO()
     }
 
