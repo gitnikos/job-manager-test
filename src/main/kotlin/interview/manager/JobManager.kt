@@ -19,10 +19,9 @@ class JobManager(
      *
      * - Returns ACCEPTED, if the job's payload was valid
      * - Returns SUBMITTED, if the job was successfully submitted to the external cluster
-     * - Returns FAILED, if the job could not be submitted to the external cluster
      *
      * @param job The job to submit (with a client provided id)
-     * @return ACCEPTED, SUBMITTED, FAILED
+     * @return ACCEPTED, SUBMITTED
      * @throws IllegalArgumentException if the job already exists
      */
     fun submit(job: Job) : JobManagerStatus {
